@@ -1,0 +1,64 @@
+@import '_vars.scss';
+@import 'modules/_footer.scss';
+@import 'modules/_lighhtbox.scss';
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'McLaren', cursive;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all ease 1s;
+}
+
+a:hover {
+    color: $teal;
+    text-decoration: none;
+}
+
+img {
+    margin-top: 40px;
+    transition: all ease 1s;
+    border-radius: 200px;
+}
+
+img:hover {
+    -webkit-transform: rotatez(50deg);
+    -ms-transform: rotatez(50deg);
+    transform: rotatez(50deg);
+    border: 20px $teal solid;
+}
+
+.white {
+    color: white;
+}
+
+.teal {
+    color: $teal;
+}
+
+.grey {
+    color: #333;
+}
+
+@media screen and (min-width:767px) {
+    p {padding: 0 100px;}
+}
+
+@media screen and (min-width:1025px) {
+    p {padding: 0 300px;}
+}

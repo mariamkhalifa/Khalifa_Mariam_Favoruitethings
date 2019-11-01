@@ -1,0 +1,41 @@
+<section id="" class="">
+    <div class="">
+        <h1 class="">Let's Play A Game!</h1>
+    </div>
+
+</section>
+
+<section id="" class="">
+    <h2 class="">
+        A Simple Guessing Game
+    </h2>
+
+    <p>
+        Can you guess what my three favourite things are? It's a very easy game to play. You just click on the question marks and VOILA! The secret is revealed!
+    </p>
+
+    <div class="container">
+        <div class="row">
+            {{#each mysteries}} {{!-- this is like a JS forEach loop --}}
+            <div class="col-sm">
+                <a href="{{ID}}">
+                    <img class="img-fluid mystery-img" src="images/{{Image}}" alt="mystery image" width="300px">
+                    <h4>{{Title}}</h4>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <!-- this will be filled in on the client side when we render our AJAX data -->
+    <section class="lightbox">
+        <span class="close">x</span>
+        <div class="">
+            <img src="" alt="favourite item image">
+        </div>
+
+        <div class="lb-content">
+
+        </div>
+    </section>
+</section>
