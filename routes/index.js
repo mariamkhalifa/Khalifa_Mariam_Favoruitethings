@@ -26,8 +26,8 @@ router.get('/:id', (req,res) => {
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
         console.log(result);
-        })
         res.json(result[0]);
+        })
 })
 
 module.exports = router;
