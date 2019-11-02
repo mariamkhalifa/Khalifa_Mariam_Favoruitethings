@@ -1,12 +1,17 @@
 @import '_vars.scss';
 @import 'modules/_footer.scss';
-@import 'modules/_lighhtbox.scss';
+@import 'modules/_lightbox.scss';
 
 body {
+    min-height: 100vh;
     background-color: black;
     color: white;
     text-align: center;
     font-family: 'McLaren', cursive;
+}
+
+main {
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -30,13 +35,13 @@ a:hover {
     text-decoration: none;
 }
 
-img {
+.mystery-img {
     margin-top: 40px;
     transition: all ease 1s;
     border-radius: 200px;
 }
 
-img:hover {
+.mystery-img:hover {
     -webkit-transform: rotatez(50deg);
     -ms-transform: rotatez(50deg);
     transform: rotatez(50deg);
@@ -56,9 +61,9 @@ img:hover {
 }
 
 @media screen and (min-width:767px) {
-    p {padding: 0 100px;}
+    .desc {padding: 0 100px;}
 }
 
 @media screen and (min-width:1025px) {
-    p {padding: 0 300px;}
+    .desc {padding: 0 300px;}
 }

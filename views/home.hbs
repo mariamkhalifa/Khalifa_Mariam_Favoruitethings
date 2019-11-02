@@ -10,7 +10,7 @@
         A Simple Guessing Game
     </h2>
 
-    <p>
+    <p class="desc">
         Can you guess what my three favourite things are? It's a very easy game to play. You just click on the question marks and VOILA! The secret is revealed!
     </p>
 
@@ -18,7 +18,7 @@
         <div class="row">
             {{#each mysteries}} {{!-- this is like a JS forEach loop --}}
             <div class="col-sm">
-                <a href="{{ID}}">
+                <a href="{{ID}}" class="mystery-link">
                     <img class="img-fluid mystery-img" src="images/{{Image}}" alt="mystery image" width="300px">
                     <h4>{{Title}}</h4>
                 </a>
@@ -28,14 +28,16 @@
     </div>
 
     <!-- this will be filled in on the client side when we render our AJAX data -->
-    <section class="lightbox">
-        <span class="close">x</span>
-        <div class="">
-            <img src="" alt="favourite item image">
-        </div>
-
-        <div class="lb-content">
-
-        </div>
-    </section>
+    <div class="container">
+        <section class="lightbox row">
+            <img src="" class="item-img img-fluid" alt="favourite item image">
+            <div class="item-text">
+                <h3  class="item-title"></h3>
+                <p class="item-desc"></p>
+                <p class="item-reason"></p>
+                <p class="item-frequency"></p>
+            </div>
+            <div class="off">x</div>
+        </section>
+    </div>
 </section>
