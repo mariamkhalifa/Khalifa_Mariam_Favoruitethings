@@ -1,6 +1,7 @@
-@import '_vars.scss';
-@import 'modules/_footer.scss';
-@import 'modules/_lightbox.scss';
+@import '_vars';
+@import 'modules/_footer';
+@import 'modules/_lightbox';
+@import 'modules/_error';
 
 body {
     min-height: 100vh;
