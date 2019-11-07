@@ -20,7 +20,7 @@ const myVM = (() => {
    function revealItem(e) {
       e.preventDefault();
      
-      let url = `/${this.getAttribute('href')}`;
+      let url = `/favourites/${this.getAttribute('href')}`;
       fetch(url)
          .then(res => res.json())
          .then(data => {

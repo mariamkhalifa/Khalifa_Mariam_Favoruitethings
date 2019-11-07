@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/:id', (req,res) => {
+router.get('/favourites/:id', (req,res) => {
     console.log('at the user route');
     console.log(req.params.id);
     let query = `SELECT * FROM tbl_favouritethings WHERE mystery_ID = "${req.params.id}"`;
