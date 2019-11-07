@@ -1,4 +1,4 @@
-<img src="images/favicon.png">
+<img src="public/images/favicon.png">
 
 # My Favourite Things
 
